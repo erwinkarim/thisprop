@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  district_id: 
+  dwelling_kind_id: 
+
+two:
+  title: MyString
+  district_id: 
+  dwelling_kind_id: 

@@ -1,0 +1,38 @@
+!!!
+%html
+%head
+	%title Thisprop
+	= stylesheet_link_tag 'http://yui.yahooapis.com/pure/0.5.0/pure-min.css', media: 'all'
+	= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true 
+	= javascript_include_tag 'application', 'data-turbolinks-track' => true 
+	= csrf_meta_tags 
+
+%body
+	.header
+		.home-menu.pure-menu.pure-menu-open.pure-menu-horizontal
+			%a.pure-menu-heading{ :href => "" } ThisProp
+			%ul
+				%li
+					%a{ :href => '#' } Buy
+				%li
+					%a{ :href => '#' } Rent
+				%li
+					%a{ :href => '#' } Sell
+				%li
+					- if user_signed_in? then
+						%ul
+							li
+					- else
+						%a{ :href => '#' } Login
+						%ul
+							%li
+								%a{ :href => '#' } My Account
+							%li.pure-menu-separator
+							%li
+								%a{ :href => '#' } My Listings
+							%li
+								%a{ :href => '#' } Wish List
+	.pure-g
+		.pure-u-1
+			= yield
+
