@@ -3,8 +3,10 @@
 %head
 	%title Thisprop
 	= stylesheet_link_tag 'http://yui.yahooapis.com/pure/0.5.0/pure-min.css', media: 'all'
+	= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', media: 'all'
+	= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css', media: 'all'
 	= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true 
-	= javascript_include_tag 'application', 'data-turbolinks-track' => true 
+
 	= csrf_meta_tags 
 
 %body
@@ -20,10 +22,7 @@
 					%a{ :href => '#' } Sell
 				%li
 					- if user_signed_in? then
-						%ul
-							li
-					- else
-						%a{ :href => '#' } Login
+						%a{ :href => '#' } FirstName LastName 
 						%ul
 							%li
 								%a{ :href => '#' } My Account
@@ -32,7 +31,31 @@
 								%a{ :href => '#' } My Listings
 							%li
 								%a{ :href => '#' } Wish List
+					- else
+						%a{ :href => '#', :data => { :toggle => 'modal', :target => '#login-box' } } Login
 	.pure-g
 		.pure-u-1
 			= yield
+
+	.modal.fade#login-box{ :tabindex => -1, :role => 'dialog' }
+		.modal-dialog
+			.modal-content
+				.modal-header
+					%button.close{ :type => 'button', :data => { :dismiss => 'modal' } } &times;
+					%h4.modal-title Login
+				.modal-body
+					%p login stuff here
+					.fb-login-button{ :data => { :size => 'large', :'show-faces' => 'false', :'auto-logout-link' => 'true' } }
+	// javscript at the end
+	= javascript_include_tag 'application', 'data-turbolinks-track' => true 
+	= javascript_include_tag  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'
+	.fb-root
+	:javascript
+		(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
 
