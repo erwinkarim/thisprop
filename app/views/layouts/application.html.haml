@@ -45,17 +45,7 @@
 					%h4.modal-title Login
 				.modal-body
 					%p login stuff here
-					.fb-login-button{ :data => { :size => 'large', :'show-faces' => 'false', :'auto-logout-link' => 'true' } }
+					= link_to 'Sign in w/ Facebook', user_omniauth_authorize_path(:facebook)
 	// javscript at the end
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true 
 	= javascript_include_tag  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'
-	.fb-root
-	:javascript
-		(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-		fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-

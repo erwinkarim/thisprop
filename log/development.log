@@ -1794,3 +1794,535 @@ Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192
 
 
 Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for 192.168.234.1 at 2015-02-18 16:50:49 +0800
+
+
+Started GET "/" for 192.168.234.1 at 2015-02-23 16:52:28 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (8.7ms)
+Completed 200 OK in 156ms (Views: 135.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.234.1 at 2015-02-23 16:52:28 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (8.2ms)
+Completed 200 OK in 151ms (Views: 133.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/listings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 16:52:29 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 16:52:29 +0800
+
+
+Started GET "/assets/application-b076171903d5d3cb6e0965cef2bcbaee.css?body=1" for 192.168.234.1 at 2015-02-23 16:52:29 +0800
+
+
+Started GET "/assets/kuala-lumpur-city-skyline-detailed-silhouette-vector-illustration-33531888-92bb09a3976b4167f26fd072a18b15d0.jpg" for 192.168.234.1 at 2015-02-23 16:52:29 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.234.1 at 2015-02-23 16:52:29 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.234.1 at 2015-02-23 16:52:29 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 192.168.234.1 at 2015-02-23 16:52:29 +0800
+
+
+Started GET "/assets/listings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 16:52:29 +0800
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 16:52:29 +0800
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for 192.168.234.1 at 2015-02-23 16:52:29 +0800
+
+
+
+
+Started GET "/assets/listings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 16:52:31 +0800
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 16:52:31 +0800
+
+
+Started GET "/assets/application-b076171903d5d3cb6e0965cef2bcbaee.css?body=1" for 192.168.234.1 at 2015-02-23 16:52:31 +0800
+
+
+Started GET "/" for 192.168.234.1 at 2015-02-23 16:53:30 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (1.0ms)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/listings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 16:53:31 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 16:53:31 +0800
+
+
+Started GET "/assets/application-b076171903d5d3cb6e0965cef2bcbaee.css?body=1" for 192.168.234.1 at 2015-02-23 16:53:31 +0800
+
+
+Started GET "/assets/kuala-lumpur-city-skyline-detailed-silhouette-vector-illustration-33531888-92bb09a3976b4167f26fd072a18b15d0.jpg" for 192.168.234.1 at 2015-02-23 16:53:31 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.234.1 at 2015-02-23 16:53:31 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.234.1 at 2015-02-23 16:53:31 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 192.168.234.1 at 2015-02-23 16:53:31 +0800
+
+
+Started GET "/assets/listings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 16:53:31 +0800
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 16:53:31 +0800
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for 192.168.234.1 at 2015-02-23 16:53:31 +0800
+
+
+Started GET "/users/auth/facebook" for 192.168.234.1 at 2015-02-23 16:53:50 +0800
+
+
+Started GET "/users/auth/facebook" for 192.168.234.1 at 2015-02-23 16:54:05 +0800
+
+
+Started GET "/" for 192.168.234.1 at 2015-02-23 16:54:42 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 267ms (Views: 265.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.234.1 at 2015-02-23 16:54:42 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.8ms)
+Completed 200 OK in 78ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/listings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 16:54:43 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 16:54:43 +0800
+
+
+Started GET "/assets/kuala-lumpur-city-skyline-detailed-silhouette-vector-illustration-33531888-92bb09a3976b4167f26fd072a18b15d0.jpg" for 192.168.234.1 at 2015-02-23 16:54:43 +0800
+
+
+Started GET "/assets/application-b076171903d5d3cb6e0965cef2bcbaee.css?body=1" for 192.168.234.1 at 2015-02-23 16:54:43 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.234.1 at 2015-02-23 16:54:43 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.234.1 at 2015-02-23 16:54:43 +0800
+
+
+Started GET "/assets/listings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 16:54:43 +0800
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 16:54:43 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 192.168.234.1 at 2015-02-23 16:54:43 +0800
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for 192.168.234.1 at 2015-02-23 16:54:43 +0800
+
+
+Started GET "/" for 192.168.234.1 at 2015-02-23 17:00:07 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 150ms (Views: 131.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:00:07 +0800
+
+
+Started GET "/assets/listings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:00:07 +0800
+
+
+Started GET "/assets/application-b076171903d5d3cb6e0965cef2bcbaee.css?body=1" for 192.168.234.1 at 2015-02-23 17:00:07 +0800
+
+
+Started GET "/assets/kuala-lumpur-city-skyline-detailed-silhouette-vector-illustration-33531888-92bb09a3976b4167f26fd072a18b15d0.jpg" for 192.168.234.1 at 2015-02-23 17:00:07 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.234.1 at 2015-02-23 17:00:07 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.234.1 at 2015-02-23 17:00:07 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 192.168.234.1 at 2015-02-23 17:00:07 +0800
+
+
+Started GET "/assets/listings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:00:07 +0800
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:00:07 +0800
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for 192.168.234.1 at 2015-02-23 17:00:07 +0800
+
+
+Started GET "/users/auth/facebook" for 192.168.234.1 at 2015-02-23 17:00:27 +0800
+
+
+Started GET "/users/auth/facebook" for 192.168.234.1 at 2015-02-23 17:00:27 +0800
+
+
+Started GET "/" for 192.168.234.1 at 2015-02-23 17:01:05 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 138ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+
+
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:01:05 +0800
+
+
+Started GET "/assets/application-b076171903d5d3cb6e0965cef2bcbaee.css?body=1" for 192.168.234.1 at 2015-02-23 17:01:05 +0800
+Started GET "/assets/listings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:01:05 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.234.1 at 2015-02-23 17:01:05 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.234.1 at 2015-02-23 17:01:05 +0800
+
+
+Started GET "/assets/kuala-lumpur-city-skyline-detailed-silhouette-vector-illustration-33531888-92bb09a3976b4167f26fd072a18b15d0.jpg" for 192.168.234.1 at 2015-02-23 17:01:05 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 192.168.234.1 at 2015-02-23 17:01:05 +0800
+
+
+Started GET "/assets/listings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:01:05 +0800
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:01:05 +0800
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for 192.168.234.1 at 2015-02-23 17:01:05 +0800
+
+
+Started GET "/users/auth/facebook" for 192.168.234.1 at 2015-02-23 17:01:08 +0800
+
+
+Started GET "/users/auth/facebook" for 192.168.234.1 at 2015-02-23 17:01:08 +0800
+
+
+Started GET "/users/auth/facebook/callback?code=AQDboSnA8eUOArcvXOugvaWpAsip6XNu5BdafI4sy7W1oyjiPaxhVOmZrK2aYxc386RyW2x8NggV6OtcRBgm6JB2iagv4Eyr4P21qeITISqFgcc3jGogHNGumyfPu4KCavs_BHcwxtpubzGkV4GbiqPYq7onqE0vhffDyRDqCVGctiLT2__zdTPfYjXXbjVV26JsoLUFs0KMqSKQoZtgsUx4Luykd1y6x1iT7J5R5iKyQKxOo3ADRm302tHCD4dU19WCI8KzT6-VLfzO_SQ6BuaQISKxCa8edrKe7LldTt5Y1k_3vS-rrzs2ulJsj0jlr_0apJUCJRzdOUARVud5Wyng&state=0fabec86e42d4f7047a0ea59000e3ebc663e3c63c476a036" for 192.168.234.1 at 2015-02-23 17:01:17 +0800
+
+AbstractController::ActionNotFound (The action 'facebook' could not be found for Devise::OmniauthCallbacksController):
+  actionpack (4.2.0) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.0) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.0) lib/action_controller/metal.rb:236:in `block in action'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:42:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.0) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.0) lib/action_dispatch/routing/route_set.rb:802:in `call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:404:in `call_app!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:362:in `callback_phase'
+  omniauth-oauth2 (1.2.0) lib/omniauth/strategies/oauth2.rb:77:in `callback_phase'
+  omniauth-facebook (2.0.0) lib/omniauth/strategies/facebook.rb:72:in `block in callback_phase'
+  omniauth-facebook (2.0.0) lib/omniauth/strategies/facebook.rb:135:in `with_authorization_code!'
+  omniauth-facebook (2.0.0) lib/omniauth/strategies/facebook.rb:71:in `callback_phase'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:227:in `callback_call'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:184:in `call!'
+  omniauth (1.2.2) lib/omniauth/strategy.rb:164:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:647:in `call'
+  activerecord (4.2.0) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:18:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:576:in `process_client'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:670:in `worker_loop'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+  unicorn (4.8.3) lib/unicorn/http_server.rb:140:in `start'
+  unicorn (4.8.3) bin/unicorn_rails:209:in `<top (required)>'
+  /home/erwinkarim/.rvm/gems/ruby-2.1.3/bin/unicorn_rails:23:in `load'
+  /home/erwinkarim/.rvm/gems/ruby-2.1.3/bin/unicorn_rails:23:in `<main>'
+  /home/erwinkarim/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `eval'
+  /home/erwinkarim/.rvm/gems/ruby-2.1.3/bin/ruby_executable_hooks:15:in `<main>'
+
+
+  Rendered /home/erwinkarim/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/unknown_action.html.erb within rescues/layout (2.0ms)
+
+
+Started GET "/users/auth/facebook/callback?code=AQDboSnA8eUOArcvXOugvaWpAsip6XNu5BdafI4sy7W1oyjiPaxhVOmZrK2aYxc386RyW2x8NggV6OtcRBgm6JB2iagv4Eyr4P21qeITISqFgcc3jGogHNGumyfPu4KCavs_BHcwxtpubzGkV4GbiqPYq7onqE0vhffDyRDqCVGctiLT2__zdTPfYjXXbjVV26JsoLUFs0KMqSKQoZtgsUx4Luykd1y6x1iT7J5R5iKyQKxOo3ADRm302tHCD4dU19WCI8KzT6-VLfzO_SQ6BuaQISKxCa8edrKe7LldTt5Y1k_3vS-rrzs2ulJsj0jlr_0apJUCJRzdOUARVud5Wyng&state=0fabec86e42d4f7047a0ea59000e3ebc663e3c63c476a036" for 192.168.234.1 at 2015-02-23 17:05:33 +0800
+Processing by Users::OmniauthCallbacksController#failure as HTML
+  Parameters: {"code"=>"AQDboSnA8eUOArcvXOugvaWpAsip6XNu5BdafI4sy7W1oyjiPaxhVOmZrK2aYxc386RyW2x8NggV6OtcRBgm6JB2iagv4Eyr4P21qeITISqFgcc3jGogHNGumyfPu4KCavs_BHcwxtpubzGkV4GbiqPYq7onqE0vhffDyRDqCVGctiLT2__zdTPfYjXXbjVV26JsoLUFs0KMqSKQoZtgsUx4Luykd1y6x1iT7J5R5iKyQKxOo3ADRm302tHCD4dU19WCI8KzT6-VLfzO_SQ6BuaQISKxCa8edrKe7LldTt5Y1k_3vS-rrzs2ulJsj0jlr_0apJUCJRzdOUARVud5Wyng", "state"=>"0fabec86e42d4f7047a0ea59000e3ebc663e3c63c476a036"}
+Redirected to http://192.168.234.100:5000/users/sign_in
+Completed 302 Found in 99ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 192.168.234.1 at 2015-02-23 17:05:35 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/erwinkarim/.rvm/gems/ruby-2.1.3/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (9.8ms)
+  Rendered /home/erwinkarim/.rvm/gems/ruby-2.1.3/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (40.6ms)
+Completed 200 OK in 127ms (Views: 108.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:05:35 +0800
+
+
+Started GET "/assets/listings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:05:35 +0800
+
+
+Started GET "/assets/application-b076171903d5d3cb6e0965cef2bcbaee.css?body=1" for 192.168.234.1 at 2015-02-23 17:05:35 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.234.1 at 2015-02-23 17:05:35 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.234.1 at 2015-02-23 17:05:35 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 192.168.234.1 at 2015-02-23 17:05:35 +0800
+
+
+Started GET "/assets/listings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:05:35 +0800
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:05:35 +0800
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for 192.168.234.1 at 2015-02-23 17:05:35 +0800
+
+
+Started GET "/users/sign_in" for 192.168.234.1 at 2015-02-23 17:05:44 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered /home/erwinkarim/.rvm/gems/ruby-2.1.3/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (6.8ms)
+  Rendered /home/erwinkarim/.rvm/gems/ruby-2.1.3/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 93ms (Views: 91.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/listings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:05:44 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:05:44 +0800
+
+
+Started GET "/assets/application-b076171903d5d3cb6e0965cef2bcbaee.css?body=1" for 192.168.234.1 at 2015-02-23 17:05:44 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.234.1 at 2015-02-23 17:05:44 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.234.1 at 2015-02-23 17:05:44 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 192.168.234.1 at 2015-02-23 17:05:44 +0800
+
+
+Started GET "/assets/listings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:05:44 +0800
+
+
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for 192.168.234.1 at 2015-02-23 17:05:44 +0800
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:05:44 +0800
+
+
+Started GET "/users/auth/facebook" for 192.168.234.1 at 2015-02-23 17:05:47 +0800
+
+
+Started GET "/users/auth/facebook" for 192.168.234.1 at 2015-02-23 17:05:48 +0800
+
+
+Started GET "/users/auth/facebook/callback?code=AQCg5Sg1ZDYx6j6UdlDjnHBtneSFMbh8xi-FxBjTYbgt79E3xDXujkePpwOW8VQuG_xYFVAczIHnufjINMvOlpucviEIx49RH4qh9mzhsYpPliM9ZefC_i2bD6trQjvaQu2J0Quhm2fLDvg0CoFLv60p13TwMG9FLex4Zwyy4sSby1othq44hu0_1KfAOqRfE_rO4esMVMYqF0Csz1I_gKtivqwM80k3WWEKqzmF42cphIYLTR-jfJEgjauN6m54Xg0doZokpMW1gQH6sw6IW-E3mFjSgIostq4ZMyeDstatfwZQmv4Db5MZv5yzVmRj6t88xBeBOck4FH0Nf_rnESDP&state=edc77f29348093fcc9ed3bd7c0c0908ccfae124c4c044ecc" for 192.168.234.1 at 2015-02-23 17:05:49 +0800
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQCg5Sg1ZDYx6j6UdlDjnHBtneSFMbh8xi-FxBjTYbgt79E3xDXujkePpwOW8VQuG_xYFVAczIHnufjINMvOlpucviEIx49RH4qh9mzhsYpPliM9ZefC_i2bD6trQjvaQu2J0Quhm2fLDvg0CoFLv60p13TwMG9FLex4Zwyy4sSby1othq44hu0_1KfAOqRfE_rO4esMVMYqF0Csz1I_gKtivqwM80k3WWEKqzmF42cphIYLTR-jfJEgjauN6m54Xg0doZokpMW1gQH6sw6IW-E3mFjSgIostq4ZMyeDstatfwZQmv4Db5MZv5yzVmRj6t88xBeBOck4FH0Nf_rnESDP", "state"=>"edc77f29348093fcc9ed3bd7c0c0908ccfae124c4c044ecc"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["provider", "facebook"], ["uid", "10206054099690172"]]
+Completed 500 Internal Server Error in 95ms
+
+NoMethodError (undefined method `name=' for #<User:0x00000007139690>):
+  app/models/user.rb:12:in `block in from_omniauth'
+  app/models/user.rb:9:in `from_omniauth'
+  app/controllers/users/omniauth_callbacks_controller.rb:4:in `facebook'
+
+
+  Rendered /home/erwinkarim/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.7ms)
+  Rendered /home/erwinkarim/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/erwinkarim/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /home/erwinkarim/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /home/erwinkarim/.rvm/gems/ruby-2.1.3/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (28.5ms)
+
+
+Started GET "/" for 192.168.234.1 at 2015-02-23 17:06:45 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (0.4ms)
+Completed 200 OK in 70ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/listings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:06:45 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:06:45 +0800
+
+
+Started GET "/assets/application-b076171903d5d3cb6e0965cef2bcbaee.css?body=1" for 192.168.234.1 at 2015-02-23 17:06:45 +0800
+
+
+Started GET "/assets/kuala-lumpur-city-skyline-detailed-silhouette-vector-illustration-33531888-92bb09a3976b4167f26fd072a18b15d0.jpg" for 192.168.234.1 at 2015-02-23 17:06:45 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:45 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:45 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:46 +0800
+
+
+Started GET "/assets/listings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:46 +0800
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:46 +0800
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:46 +0800
+
+
+Started GET "/users/auth/facebook" for 192.168.234.1 at 2015-02-23 17:06:50 +0800
+
+
+Started GET "/users/auth/facebook" for 192.168.234.1 at 2015-02-23 17:06:50 +0800
+
+
+Started GET "/users/auth/facebook/callback?code=AQDZtXQgev0RfXzocGrQ0e4f4HsqGR86AczUpXwXPsDQ4gnwVQvUiaM16hn_oIirTAequqCvbCrTltexyx3zdB9US0meIM7gOuvmBwAg_5uoEdxj9CQLoYKTiWPindcDbYhSPZOV5IDxNzd-lCofcb9BvWgjkCVjanEgPTV2MAGO-iE2yzzHf2sq9WrHQoJINs0MTEdk-0VbVCcxtC8wn3-NXD2BZaCVrmzZ0RnDcUL9Se1E7DwgVUCelhLH7B9ts6reiNcx0W1MWo2-_ysaz7db9xluugUVU_zgwq0KDrUAjky_Uk6y8n8LG7JEJ03H0jNDrql_U5FaAD6j6zB5eYEP&state=0a639bd120419770b1fb78348334f839157e566ce95d07db" for 192.168.234.1 at 2015-02-23 17:06:50 +0800
+Processing by Users::OmniauthCallbacksController#facebook as HTML
+  Parameters: {"code"=>"AQDZtXQgev0RfXzocGrQ0e4f4HsqGR86AczUpXwXPsDQ4gnwVQvUiaM16hn_oIirTAequqCvbCrTltexyx3zdB9US0meIM7gOuvmBwAg_5uoEdxj9CQLoYKTiWPindcDbYhSPZOV5IDxNzd-lCofcb9BvWgjkCVjanEgPTV2MAGO-iE2yzzHf2sq9WrHQoJINs0MTEdk-0VbVCcxtC8wn3-NXD2BZaCVrmzZ0RnDcUL9Se1E7DwgVUCelhLH7B9ts6reiNcx0W1MWo2-_ysaz7db9xluugUVU_zgwq0KDrUAjky_Uk6y8n8LG7JEJ03H0jNDrql_U5FaAD6j6zB5eYEP", "state"=>"0a639bd120419770b1fb78348334f839157e566ce95d07db"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."provider" = ? AND "users"."uid" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["provider", "facebook"], ["uid", "10206054099690172"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'erwinkarim@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "users" ("provider", "uid", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["provider", "facebook"], ["uid", "10206054099690172"], ["email", "erwinkarim@gmail.com"], ["encrypted_password", "$2a$10$zF0WeeNOOifrb0afd6XIaOZHsQOHuWlgB08Fv2.dtd0LTygcJ2kaO"], ["created_at", "2015-02-23 09:06:53.184343"], ["updated_at", "2015-02-23 09:06:53.184343"]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-02-23 09:06:53.202075"], ["current_sign_in_at", "2015-02-23 09:06:53.202075"], ["last_sign_in_ip", "192.168.234.1"], ["current_sign_in_ip", "192.168.234.1"], ["sign_in_count", 1], ["updated_at", "2015-02-23 09:06:53.204180"], ["id", 1]]
+  [1m[35m (12.0ms)[0m  commit transaction
+Redirected to http://192.168.234.100:5000/
+Completed 302 Found in 141ms (ActiveRecord: 25.0ms)
+
+
+Started GET "/" for 192.168.234.1 at 2015-02-23 17:06:53 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (4.7ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 126ms (Views: 123.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/listings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:06:53 +0800
+
+
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:06:53 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:53 +0800
+Started GET "/assets/application-b076171903d5d3cb6e0965cef2bcbaee.css?body=1" for 192.168.234.1 at 2015-02-23 17:06:53 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:53 +0800
+
+
+Started GET "/assets/listings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:53 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:53 +0800
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:53 +0800
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:53 +0800
+
+
+Started GET "/assets/kuala-lumpur-city-skyline-detailed-silhouette-vector-illustration-33531888-92bb09a3976b4167f26fd072a18b15d0.jpg" for 192.168.234.1 at 2015-02-23 17:06:53 +0800
+
+
+Started GET "/" for 192.168.234.1 at 2015-02-23 17:06:59 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.haml within layouts/application (3.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 89ms (Views: 87.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/listings-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:06:59 +0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 192.168.234.1 at 2015-02-23 17:06:59 +0800
+
+
+Started GET "/assets/application-b076171903d5d3cb6e0965cef2bcbaee.css?body=1" for 192.168.234.1 at 2015-02-23 17:06:59 +0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:59 +0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:59 +0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:59 +0800
+
+
+Started GET "/assets/listings-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:59 +0800
+
+
+Started GET "/assets/application-322efd85de1e19784a5dc35312bc9882.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:59 +0800
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 192.168.234.1 at 2015-02-23 17:06:59 +0800
