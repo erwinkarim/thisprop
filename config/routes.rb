@@ -1,11 +1,19 @@
 Rails.application.routes.draw do
 
   root 'welcome#index'
-  get 'welcome/index'
 
 	devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+
 	devise_scope :user do
 		get 'sign_out', :to => 'devise/sessions#destroy'
+	end
+
+	resources :users, :only => [:index, :show] do
+		resources :listings, :except => [:index] do
+			collection do
+				get '/', :to => 'listings#user_listings'
+			end
+		end
 	end
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -13,7 +21,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
 
-	resources :listings do
+	resources :listings, :only => [:show, :index] do
 		collection do 
 			get 'search'
 		end

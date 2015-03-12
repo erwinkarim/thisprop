@@ -1,0 +1,13 @@
+.container
+	.row
+		.col-xs-12
+			- if user_signed_in? && current_user.id = @user.id then
+				%a.btn.btn-primary{ :href => new_user_listing_path(current_user) } + New Listings
+		.col-xs-12
+			%h1.page-header #{@user.name} Listings
+			- if @listings.count == 0 then
+				%h2 You Have No Listings
+			- else
+				- @listings.each do |listing|
+					= listing
+

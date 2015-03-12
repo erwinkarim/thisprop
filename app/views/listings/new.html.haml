@@ -1,0 +1,50 @@
+.container
+	.row
+		.col-xs-12.col-md-6
+			- if !user_signed_in? then
+				.well Login Required
+			- else
+				%div{ :role => 'tab' }
+					%ul#new-listings-tab.nav.nav-tabs{ :role => 'tablist' }
+						%li.active{ :role => 'presentation' }
+							%a{ :'data-toggle' => 'tab', :href => '#create', :role => 'tab' } 1. Create
+						%li{ :role => 'presentation' }
+							%a#review-tab{ :'data-toggle' => 'tab', :href => '#review', :role => 'tab' } 2. Review
+					.tab-content
+						#create.tab-pane.active{ :role => 'tabpanel' }
+							%h2.page-header New Listing
+							%form
+								.form-group
+									%label Title
+									%input#title-input.form-control{ :type => 'text', :placeholder => 'Put Your Title Here' }
+								.form-group
+									%label Address
+									%input#address-input.form-control{ :type => 'text', :placeholder => 'Put Your Address Here' }
+								.form-group
+									%label Area
+									%select.form-control#area-input
+										= options_from_collection_for_select(District.all, 'id', 'name')
+								.form-group
+									%label Property Type
+									%select.form-control#dwelling-kind-input
+										= options_from_collection_for_select(DwellingKind.all, 'id', 'name')
+								.form-group
+									%label Description
+									%textarea#description-input.form-control{ :rows => '3',  :placeholder => 'Describe Your Property' }
+								.form-group
+									%button.btn.btn-primary{ :type => 'button' } Review
+						#review.tab-pane{ :role => 'tabpanel' }
+							%h2.page-header Review Listing
+							%h3.page-header Title
+							%p#title-output Put Title Here
+							%h3.page-header Address
+							%p#address-output Put Address Here
+							%h3.page-header Area
+							%p#area-output Put Property Type Here
+							%h3.page-header Property Type
+							%p#dwelling-kind-output Put Property Type Here
+							%h3.page-header Description
+							#description-output Put Description Here
+							%a.btn.btn-default{ :href => '#create', :'data-toggle' => 'tab' } Edit
+							%a.btn.btn-primary{ :href => '#' } Submit
+							

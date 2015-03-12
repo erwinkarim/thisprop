@@ -50,6 +50,9 @@ gem 'haml'
 #managed process
 gem 'foreman'
 
+#js management
+gem 'paloma'
+
 #user management, include login w/ facebook
 gem 'devise'
 gem 'omniauth-facebook'
