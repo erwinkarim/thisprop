@@ -1,0 +1,8 @@
+.container
+	.row
+		= render :template => 'listings/show.template', :locals => { :@listing => @listing }
+	- if user_signed_in? && current_user.id == @listing.user_id then
+		.row
+			.col-xs-12
+				%h3.page-header Additional Action
+				%a.btn.btn-primary{ :href => edit_user_listing_path(current_user, @listing) } Edit

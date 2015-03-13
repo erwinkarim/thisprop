@@ -1,0 +1,13 @@
+%table.table.table-striped.table-responsive
+	%thead	
+		%tr
+			%th.col-xs-9 Title
+			%th.col-xs-2 District
+			%th.col-xs-1 Type
+	%tbody
+		- listings.each do |listing|
+			%tr
+				%td #{ link_to listing.title, listing_path(listing) }
+				%td #{ District.find_by_id(listing.district_id).name }
+				%td #{ DwellingKind.find_by_id(listing.dwelling_kind_id).name }
+			

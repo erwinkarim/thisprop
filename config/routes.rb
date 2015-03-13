@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 	resources :users, :only => [:index, :show] do
 		resources :listings, :except => [:index] do
 			collection do
+				post 'review'
 				get '/', :to => 'listings#user_listings'
 			end
 		end
@@ -24,6 +25,14 @@ Rails.application.routes.draw do
 	resources :listings, :only => [:show, :index] do
 		collection do 
 			get 'search'
+		end
+	end
+
+	resources :districts, :only => [] do
+		resources :listings, :only => [] do
+			collection do 
+				get '/', :to => 'listings#district_listings'
+			end
 		end
 	end
 

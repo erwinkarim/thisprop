@@ -1,0 +1,21 @@
+= form_for @listing, { :url => review_user_listings_path(current_user.id), :method => :post, :html => { :class => 'form' } } do |f|
+	- if action_name != 'new' then
+		= f.hidden_field :id
+	%input{ :type => 'hidden', :name => 'action_taken', :value => action_name }
+	.form-group
+		%label Title
+		= f.text_field :title, :class => 'form-control', :placeholder => 'Put Your Title Here'
+	.form-group
+		%label Address
+		= f.text_field :address, :class => 'form-control', :placeholder => 'Put Your Address Here'
+	.form-group
+		%label Area
+		= f.select :district_id, District.all.collect{ |d| [d.name, d.id] }, {}, { :class => 'form-control' }
+	.form-group
+		%label Property Type
+		= f.select :dwelling_kind_id, DwellingKind.all.collect{ |d| [d.name, d.id] }, {}, { :class => 'form-control' }
+	.form-group
+		%label Description
+		= f.text_area :description, :rows => '3', :placeholder => 'Describe Your Property', :class => 'form-control'
+	.form-group
+		%button.btn.btn-primary{ :type => 'submit' } Review

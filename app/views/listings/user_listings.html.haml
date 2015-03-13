@@ -6,8 +6,7 @@
 		.col-xs-12
 			%h1.page-header #{@user.name} Listings
 			- if @listings.count == 0 then
-				%h2 You Have No Listings
+				%h2 No Listings yet...
 			- else
-				- @listings.each do |listing|
-					= listing
+				= render :template => 'listings/list.template', :locals => { :listings => @listings }
 

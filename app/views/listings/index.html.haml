@@ -1,1 +1,5 @@
-%h1 listings here
+.container
+	.row
+		.col-xs-12
+			%h1.page-header Recent Listings
+			= render :template => 'listings/list.template', :locals => { :listings => @listings }

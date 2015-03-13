@@ -1,0 +1,19 @@
+.col-xs-12
+	%h1.page-header 
+		= @listing.title
+		%small 
+			by
+			- user = User.find_by_id(@listing.user_id)
+			%a{ :href => user_listings_path(user) } #{user.name}
+.col-xs-12
+	= simple_format  @listing.description, {:class => 'lead' }
+.col-xs-12
+	%h2.page-header Address
+	%p #{ @listing.address } 
+.col-xs-12
+	%h2.page-header Additional Info
+	%dl.dl-horizontal
+		%dt Area
+		%dd #{ link_to District.find_by_id(@listing.district_id).name, district_listings_path(@listing.district_id) } 
+		%dt Dwelling Kind
+		%dd #{ DwellingKind.find_by_id(@listing.dwelling_kind_id).name }

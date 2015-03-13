@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150311124314) do
+ActiveRecord::Schema.define(version: 20150313094537) do
 
   create_table "districts", force: :cascade do |t|
     t.string   "name"
@@ -40,6 +40,8 @@ ActiveRecord::Schema.define(version: 20150311124314) do
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.integer  "user_id"
+    t.text     "description"
+    t.string   "address"
   end
 
   add_index "listings", ["district_id"], name: "index_listings_on_district_id"
