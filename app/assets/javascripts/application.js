@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require paloma
+//= require jquery-fileupload/basic
 //= require_tree .

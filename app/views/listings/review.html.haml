@@ -4,9 +4,12 @@
 	.row
 		= render :template => 'listings/show.template', :locals => { :@listing => @listing }
 	.row
+		// sanity checks
 		- if @action == 'new' then
 			%a.btn.btn-default{ :href => new_user_listing_path(:user_id => current_user, :listing => @listing.serializable_hash.to_query) } Edit
-			= link_to 'Submit', user_listings_path(current_user, :listing => @listing.serializable_hash.to_query), :method => :post, :class => 'btn btn-primary'
+			- if @listing.valid? then
+				= link_to 'Submit', user_listings_path(current_user, :listing => @listing.serializable_hash.to_query), :method => :post, :class => 'btn btn-primary'
 		- else
 			%a.btn.btn-default{ :href => edit_user_listing_path(:user_id => current_user, :id => @listing, :listing => @listing.serializable_hash.to_query) } Edit
-			= link_to 'Submit', user_listing_path(current_user, :id => @listing.id, :listing => @listing.serializable_hash.to_query), :method => :patch, :class => 'btn btn-primary'
+			- if @listing.valid? then
+				= link_to 'Submit', user_listing_path(current_user, :id => @listing.id, :listing => @listing.serializable_hash.to_query), :method => :patch, :class => 'btn btn-primary'

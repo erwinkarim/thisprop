@@ -30,6 +30,7 @@ class ListingsController < ApplicationController
 		end
 	end
 
+	# POST     /users/:user_id/listings(.:format)
 	def create
 		@listing = User.find_by_id(params[:user_id]).listings.new( Rack::Utils.parse_nested_query(params[:listing]) )
 		if @listing.save! then
@@ -40,6 +41,30 @@ class ListingsController < ApplicationController
 			render :status => :error
 		end
 	end
+
+	# PATCH   /users/:user_id/listings/:id(.:format)
+	# PUT			/users/:user_id/listings/:id(.:format)
+	def update
+
+		listing_hash = Rack::Utils.parse_nested_query(params[:listing])
+		@listing = Listing.find_by_id(listing_hash["id"])
+
+		@listing.title = listing_hash["title"]
+		@listing.address = listing_hash["address"]
+		@listing.dwelling_kind_id = listing_hash["dwelling_kind_id"]
+		@listing.district_id = listing_hash["district_id"]
+		@listing.description = listing_hash["description"]
+
+		if @listing.save! then
+			respond_to do |format|
+				format.html { redirect_to @listing }
+			end
+		else
+			render :status => :internal_server_error
+			redirect_to edit_user_listing_path(:user_id => params[:user_id], :id => params[:id], :listing => params[:listing])
+		end
+	end
+
 
   def search
   end
@@ -100,11 +125,6 @@ class ListingsController < ApplicationController
 		respond_to do |format|
 			format.html { render :template => 'listings/index', :locals => { :'@listings' => @listings } }
 		end
-	end
-
-	# PATCH   /users/:user_id/listings/:id(.:format)
-	# PUT			/users/:user_id/listings/:id(.:format)
-	def update
 	end
 
 	private

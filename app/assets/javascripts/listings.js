@@ -2,15 +2,23 @@
 var ListingsController = Paloma.controller('Listings');
 
 ListingsController.prototype.new = function(){
-	( function(){
-	$('#review-tab').on('show.bs.tab', function(e){
-		$('#title-output').text( $('#title-input').val() );
-		$('#address-output').text( $('#address-input').val() );
-		$('#area-output').text( $('#area-input option:selected').text() );
-		$('#dwelling-kind-output').text( $('#dwelling-kind-input option:selected').text() );
-		$('#description-output').text( $('#description-input').val() );
+	$(document).ready( function(){
+		$('#picture-upload-stuff').fileupload({
+			url:'/listing_pictures',
+			done: function(e,data){
+				$.each(jQuery.parseJSON(data.result).files, function(index,file){
+					$.get(file.thumbnail_template, function(data){
+						$('#listing-pictures').append(data);
+					});
+				});
+			}
+		}).bind('fileuploadadd', function(e,data){
+			//think about client-side resize later
+			$('#picture-drop-zone').text('Uploading pictures...');
+		}).bind('fileuploadalways', function(e,data){
+			$('#picture-drop-zone').text('Drop Files in this page or ...');
+		});
 	});
-	})(jQuery);
 };
 
 ListingsController.prototype.user_listings = function(){

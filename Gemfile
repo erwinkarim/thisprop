@@ -53,6 +53,11 @@ gem 'foreman'
 #js management
 gem 'paloma'
 
+#file managerment
+gem 'carrierwave_direct'
+gem 'jquery-fileupload-rails'
+gem 'rmagick'
+
 #user management, include login w/ facebook
 gem 'devise'
 gem 'omniauth-facebook'

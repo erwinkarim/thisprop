@@ -26,6 +26,12 @@ Rails.application.routes.draw do
 		collection do 
 			get 'search'
 		end
+		resources :listing_pictures, :only => [:index, :show] do
+		end
+	end
+
+	resources :listing_pictures, :only => [:create, :show] do
+		get 'thumb'
 	end
 
 	resources :districts, :only => [] do

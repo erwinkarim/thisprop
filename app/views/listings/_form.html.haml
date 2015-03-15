@@ -1,3 +1,7 @@
+//template for downloads
+%script#template-download{ :type => 'text/x-tmpl' }
+	%img{ :src => 'http://placehold.it/150x150' }
+	
 = form_for @listing, { :url => review_user_listings_path(current_user.id), :method => :post, :html => { :class => 'form' } } do |f|
 	- if action_name != 'new' then
 		= f.hidden_field :id
@@ -17,5 +21,15 @@
 	.form-group
 		%label Description
 		= f.text_area :description, :rows => '3', :placeholder => 'Describe Your Property', :class => 'form-control'
+	.form-group
+		%label Picture (max 10)
+		%p
+			Drop Files in this page or
+			%span.btn.btn-default.fileinput-button
+				%span choose a file
+				%input#picture-upload-stuff{:type => 'file', :name => 'listing_pictures[]'}
+	.form-group
+		#picture-drop-zone
+		.row#listing-pictures
 	.form-group
 		%button.btn.btn-primary{ :type => 'submit' } Review
