@@ -3,11 +3,7 @@ class Listing < ActiveRecord::Base
   belongs_to :dwelling_kind
 	belongs_to :user
 	has_many :listing_pictures
+	validates  :description, :presence => true
+	validates  :address, :presence => true
 
-	def valid?
-		if self.description.nil? || self.address.nil? then
-			return false
-		end
-		return !self.description.empty? && !self.address.empty?
-	end
 end

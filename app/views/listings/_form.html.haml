@@ -31,5 +31,9 @@
 	.form-group
 		#picture-drop-zone
 		.row#listing-pictures
+			- unless @listing_pictures_id.nil? then
+				- @listing_pictures_id.each do |id|
+					= render :template => 'listing_pictures/thumb.template', :locals => { :'@listing_picture' => ListingPicture.find(id) }
 	.form-group
+		%a.btn.btn-default{ :href => cancel_user_listings_path(current_user) } Cancel
 		%button.btn.btn-primary{ :type => 'submit' } Review

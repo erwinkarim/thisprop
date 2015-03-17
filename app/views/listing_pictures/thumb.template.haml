@@ -1,5 +1,7 @@
-.col-xs-6.col-md-4
+.col-xs-6.col-md-4{ :id => 'thumb-lp-' + @listing_picture.id.to_s }
 	.thumbnail
 		%img{ :src => @listing_picture.avatar.thumb150.url }
 		.caption
-			%button.btn.btn-danger.btn-block{ :type => 'button' } &times;
+			= link_to '&times;'.html_safe , listing_picture_path(@listing_picture, :target => '#thumb-lp-' + @listing_picture.id.to_s), 
+				:method => :delete, :class => 'btn btn-danger btn-block', :remote => true
+			%input.hide{ :type => 'checkbox', :name => 'listing_pictures[]', :value => @listing_picture.id, :checked => true }

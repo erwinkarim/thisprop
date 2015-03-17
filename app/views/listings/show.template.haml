@@ -1,15 +1,16 @@
 .col-xs-12
-	- if @listing.listing_pictures.count == 0 then
+	//if @listing.listing_pictures.count == 0 then
+	- if @listing_pictures.nil? || @listing_pictures.count == 0 then
 		.well No Pictures Yet
 	- else
 		.carousel.slide#picture-carousel{ :'data-ride' => 'carousel' }
 			%ol.carousel-indicators
-				- @listing.listing_pictures.count.times do |i|
+				- @listing_pictures.count.times do |i|
 					%li{ :data => { :target => '#picture-carousel', :'slide-to' => i }, :class => i == 0 ? 'active' : '' }
 			.carousel-inner{ :role => 'listbox' }
-				- @listing.listing_pictures.count.times do |i|
+				- @listing_pictures.count.times do |i|
 					.item{ :class => i == 0 ? 'active' : '' }
-						%img{ :src => @listing.listing_pictures[i].avatar.large.url}
+						%img{ :src => @listing_pictures[i].avatar.large.url}
 			%a.left.carousel-control{ :href => '#picture-carousel', :role => 'button', :'data-slide' => 'prev' }
 				%span.glyphicon.glyphicon-chevron-left{ :'aria-hidden' => 'true' }
 				%span.sr-only Previous

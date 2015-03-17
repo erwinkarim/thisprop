@@ -2,14 +2,15 @@
 	.row
 		.well Review
 	.row
-		= render :template => 'listings/show.template', :locals => { :@listing => @listing }
+		= render :template => 'listings/show.template', :locals => { :'@listing' => @listing, :'@listing_pictures' => @listing_pictures }
 	.row
 		// sanity checks
 		- if @action == 'new' then
-			%a.btn.btn-default{ :href => new_user_listing_path(:user_id => current_user, :listing => @listing.serializable_hash.to_query) } Edit
-			- if @listing.valid? then
-				= link_to 'Submit', user_listings_path(current_user, :listing => @listing.serializable_hash.to_query), :method => :post, :class => 'btn btn-primary'
+			%a.btn.btn-default{ :href => new_user_listing_path(:user_id => current_user) } Edit
+			- if @listing.valid? && !@listing_pictures.empty? then
+				= link_to 'Submit', user_listings_path(current_user), 
+					:method => :post, :class => 'btn btn-primary'
 		- else
-			%a.btn.btn-default{ :href => edit_user_listing_path(:user_id => current_user, :id => @listing, :listing => @listing.serializable_hash.to_query) } Edit
-			- if @listing.valid? then
-				= link_to 'Submit', user_listing_path(current_user, :id => @listing.id, :listing => @listing.serializable_hash.to_query), :method => :patch, :class => 'btn btn-primary'
+			%a.btn.btn-default{ :href => edit_user_listing_path(:user_id => current_user, :id => @listing) } Edit
+			- if @listing.valid? && !@listing_pictures.empty? then
+				= link_to 'Submit', user_listing_path(current_user, :id => @listing.id), :method => :patch, :class => 'btn btn-primary'

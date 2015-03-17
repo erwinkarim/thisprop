@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 			collection do
 				post 'review'
 				get '/', :to => 'listings#user_listings'
+				get 'cancel', :to => 'listings#cancel'
 			end
 		end
 	end
@@ -30,7 +31,7 @@ Rails.application.routes.draw do
 		end
 	end
 
-	resources :listing_pictures, :only => [:create, :show] do
+	resources :listing_pictures, :only => [:create, :show, :destroy] do
 		get 'thumb'
 	end
 

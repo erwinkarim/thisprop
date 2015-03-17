@@ -1,9 +1,8 @@
 
 var ListingsController = Paloma.controller('Listings');
 
-ListingsController.prototype.new = function(){
-	$(document).ready( function(){
-		$('#picture-upload-stuff').fileupload({
+var setup_fileupload = function(target){
+	$(target).fileupload({
 			url:'/listing_pictures',
 			done: function(e,data){
 				$.each(jQuery.parseJSON(data.result).files, function(index,file){
@@ -16,8 +15,20 @@ ListingsController.prototype.new = function(){
 			//think about client-side resize later
 			$('#picture-drop-zone').text('Uploading pictures...');
 		}).bind('fileuploadalways', function(e,data){
-			$('#picture-drop-zone').text('Drop Files in this page or ...');
+			$('#picture-drop-zone').text('Done!!!');
 		});
+
+};
+
+ListingsController.prototype.new = function(){
+	$(document).ready( function(){ 
+		setup_fileupload('#picture-upload-stuff');
+	});
+};
+
+ListingsController.prototype.edit = function(){
+	$(document).ready( function(){ 
+		setup_fileupload('#picture-upload-stuff');
 	});
 };
 
