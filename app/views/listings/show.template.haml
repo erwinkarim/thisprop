@@ -18,7 +18,7 @@
 				%span.glyphicon.glyphicon-chevron-right{ :'aria-hidden' => 'true' }
 				%span.sr-only Next
 		
-.col-xs-12
+.col-xs-12.col-md-8
 	%h1.page-header 
 		- if @listing.title.empty? then
 			.well Title Required
@@ -26,13 +26,19 @@
 			= @listing.title
 			%small 
 				by
-				- user = User.find_by_id(@listing.user_id)
-				%a{ :href => user_listings_path(user) } #{user.name}
-.col-xs-12
+				%a{ :href => user_listings_path(@user) } #{@user.name}
 	- if @listing.description.empty? then
 		.well Description Required
 	- else
 		= simple_format  @listing.description, {:class => 'lead' }
+.col-xs-12.col-md-4
+	%h2.page-header Contact
+	%img{ :src => @user.image }
+	%dl
+		%dt Email
+		%dd #{ @user.email or 'None' }
+		%dt Phone
+		%dd #{ @user.phone_area_code } #{ @user.phone or 'None' }
 .col-xs-12
 	%h2.page-header Address
 	- if @listing.address.empty? then

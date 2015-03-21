@@ -123,6 +123,7 @@ class ListingsController < ApplicationController
 	def show
 		@listing = Listing.find_by_id(params[:id]) or not_found
 		@listing_pictures = ListingPicture.where(:listing_id => @listing.id)
+		@user = User.find_by_id(@listing.user_id)
 
 		respond_to do |format|
 			format.html
@@ -133,6 +134,7 @@ class ListingsController < ApplicationController
 	# session data is generated in review process
 	def review
 		@action = params[:action_taken]
+		@user = User.find_by_id params[:user_id]
 
 			
 		if @action == 'new' then	

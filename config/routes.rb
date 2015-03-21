@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'user/show'
+
   root 'welcome#index'
 
 	devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
@@ -8,7 +10,7 @@ Rails.application.routes.draw do
 		get 'sign_out', :to => 'devise/sessions#destroy'
 	end
 
-	resources :users, :only => [:index, :show] do
+	resources :users, :only => [:index, :show, :update, :edit] do
 		resources :listings, :except => [:index] do
 			collection do
 				post 'review'

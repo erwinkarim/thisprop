@@ -1,0 +1,15 @@
+.container
+	.row
+		.col-xs-12
+			%h1.page-header #{ @user.name }
+			%dl
+				%dd Email
+				%dt #{ @user.email }
+				%dd Alternate Email
+				%dt #{ @user.alt_email or 'None' }
+				%dd Phone
+				%dt #{ @user.phone_area_code} #{ @user.phone or 'None' }
+		.col-xs-12
+			%h2.page-header Addinital Actions
+			- if user_signed_in? && current_user.id == @user.id then
+				%a.btn.btn-primary{ :href => edit_user_path(@user) } Edit Profile
