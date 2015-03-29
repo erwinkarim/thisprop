@@ -13,6 +13,12 @@
 		%label Address
 		= f.text_field :address, :class => 'form-control', :placeholder => 'Put Your Address Here'
 	.form-group
+		%label Price
+		.input-group
+			%span.input-group-addon RM
+			= f.number_field :price, :class => 'form-control'
+			%span.input-group-addon .00
+	.form-group
 		%label Area
 		= f.select :district_id, District.all.collect{ |d| [d.name, d.id] }, {}, { :class => 'form-control' }
 	.form-group

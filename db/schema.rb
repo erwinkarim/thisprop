@@ -11,10 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150319152606) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+ActiveRecord::Schema.define(version: 20150328080150) do
 
   create_table "districts", force: :cascade do |t|
     t.string   "name"
@@ -38,7 +35,7 @@ ActiveRecord::Schema.define(version: 20150319152606) do
     t.integer  "listing_id"
   end
 
-  add_index "listing_pictures", ["listing_id"], name: "index_listing_pictures_on_listing_id", using: :btree
+  add_index "listing_pictures", ["listing_id"], name: "index_listing_pictures_on_listing_id"
 
   create_table "listings", force: :cascade do |t|
     t.string   "title"
@@ -49,11 +46,12 @@ ActiveRecord::Schema.define(version: 20150319152606) do
     t.string   "address"
     t.integer  "district_id"
     t.integer  "dwelling_kind_id"
+    t.integer  "price"
   end
 
-  add_index "listings", ["district_id"], name: "index_listings_on_district_id", using: :btree
-  add_index "listings", ["dwelling_kind_id"], name: "index_listings_on_dwelling_kind_id", using: :btree
-  add_index "listings", ["user_id"], name: "index_listings_on_user_id", using: :btree
+  add_index "listings", ["district_id"], name: "index_listings_on_district_id"
+  add_index "listings", ["dwelling_kind_id"], name: "index_listings_on_dwelling_kind_id"
+  add_index "listings", ["user_id"], name: "index_listings_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at",                          null: false
@@ -77,11 +75,7 @@ ActiveRecord::Schema.define(version: 20150319152606) do
     t.string   "alt_email"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
-  add_foreign_key "listing_pictures", "listings"
-  add_foreign_key "listings", "districts"
-  add_foreign_key "listings", "dwelling_kinds"
-  add_foreign_key "listings", "users"
 end

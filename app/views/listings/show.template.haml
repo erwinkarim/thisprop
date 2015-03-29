@@ -32,6 +32,8 @@
 	- else
 		= simple_format  @listing.description, {:class => 'lead' }
 .col-xs-12.col-md-4
+	%h2.page-header Price
+	%p.lead #{ number_to_currency @listing.price, :unit => 'RM'}
 	%h2.page-header Contact
 	%img{ :src => @user.image }
 	%dl

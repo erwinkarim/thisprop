@@ -1,0 +1,8 @@
+.col-xs-12.col-md-3
+	.thumbnail
+		%a{ :href => listing_path(listing) }
+			%img{ :src => listing.listing_pictures.first.avatar.thumb150.url }
+		.caption
+			%h3 
+				%a{ :href => listing_path(listing) } #{ listing.title }
+			%p #{ number_to_currency listing.price, :unit => 'RM' }
