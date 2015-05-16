@@ -1,61 +1,56 @@
 !!!
 %html
-%head
-	%meta{:charset => 'utf-8' }
-	%meta{ :'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge' }
-	%meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1' }
-	%title Thisprop
-	= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true 
-	= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', media: 'all'
-	= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css', media: 'all'
-	= #do this later stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', media: 'all'
-
-	= csrf_meta_tags 
-
-%body
-	.navbar.navbar-default
-		.container-fluid
-			.navbar-header
-				%button.navbar-toggle.collapsed{ :type => 'button', :data => { :toggle => 'collapse', :target => '#thisprop-navbar-collapse-1' } }
-					%span.sr-only Toggle Navigation
-					%span.icon-bar
-					%span.icon-bar
-					%span.icon-bar
-				%a.navbar-brand{ :href => root_path } ThisProp
-			.collapse.navbar-collapse#thisprop-navbar-collapse-1
-				%ul.nav.navbar-nav.navbar-right
-					%li
-						%a{ :href => listings_path } Buy
-					- if user_signed_in? then
-						%li.dropdown
-							%a.dropdown-toggle{ :href => '#', :data => { :toggle => 'dropdown' }, :role => 'button' }
-								%strong #{current_user.name}
-								%span.caret
-							%ul.dropdown-menu{ :role => 'menu' }
-								%li
-									%a{ :href => user_listings_path(current_user) } Your Listings
-								%li
-									%a{ :href => user_path(current_user) } Your Profile
-								%li.divider
-								%li
-									%a{ :href => sign_out_path } Log Out
-					- else
+	%head
+		%meta{ :charset => 'utf-8' }
+		%meta{ :'http-equiv' => 'X-UA-Compatible', :content => 'IE=edge' }
+		%meta{ :name => 'viewport', :content => 'width=device-width, initial-scale=1' }
+		%title Ampang Property
+		= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true 
+		= stylesheet_link_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', media: 'all'
+		= javascript_include_tag 'application', 'data-turbolinks-track' => true 
+		= javascript_include_tag	'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'
+		= csrf_meta_tags 
+	%body
+		.navbar.navbar-default
+			.container-fluid
+				.navbar-header
+					%button.navbar-toggle.collapsed{ :type => 'button', :data => { :toggle => 'collapse', :target => '#thisprop-navbar-collapse-1' } }
+						%span.sr-only Toggle Navigation
+						%span.icon-bar
+						%span.icon-bar
+						%span.icon-bar
+					%a.navbar-brand{ :href => root_path } AmProp
+				.collapse.navbar-collapse#thisprop-navbar-collapse-1
+					%ul.nav.navbar-nav.navbar-right
 						%li
-							%a{ :href => '#', :data => { :toggle => 'modal', :target => '#login-box' } } Login
-						
-	= yield
-	%footer
-		%small
-			&copy; Malek Erwin Karim 2015. All Rights Reserved
+							%a{ :href => listings_path } Buy
+						- if user_signed_in? then
+							%li.dropdown
+								%a.dropdown-toggle{ :href => '#', :data => { :toggle => 'dropdown' }, :role => 'button' }
+									%strong #{current_user.name}
+									%span.caret
+								%ul.dropdown-menu{ :role => 'menu' }
+									%li
+										%a{ :href => user_listings_path(current_user) } Your Listings
+									%li
+										%a{ :href => user_path(current_user) } Your Profile
+									%li.divider
+									%li
+										%a{ :href => sign_out_path } Log Out
+						- else
+							%li
+								%a{ :href => '#', :data => { :toggle => 'modal', :target => '#login-box' } } Login
+							
+		= yield
+		%footer
+			%small
+				&copy; Malek Erwin Karim 2015. All Rights Reserved
 
-	.modal.fade#login-box{ :tabindex => -1, :role => 'dialog' }
-		.modal-dialog
-			.modal-content
-				.modal-header
-					%button.close{ :type => 'button', :data => { :dismiss => 'modal' } } &times;
-					%h4.modal-title Login
-				.modal-body
-					%a.btn.btn-primary.btn-block{ :href => user_omniauth_authorize_path(:facebook) } Sign In With Facebook
-	// javscript at the end
-	= javascript_include_tag 'application', 'data-turbolinks-track' => true 
-	= javascript_include_tag  'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'
+		.modal.fade#login-box{ :tabindex => -1, :role => 'dialog' }
+			.modal-dialog
+				.modal-content
+					.modal-header
+						%button.close{ :type => 'button', :data => { :dismiss => 'modal' } } &times;
+						%h4.modal-title Login
+					.modal-body
+						%a.btn.btn-primary.btn-block{ :href => user_omniauth_authorize_path(:facebook) } Sign In With Facebook

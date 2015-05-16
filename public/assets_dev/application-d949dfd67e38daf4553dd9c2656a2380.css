@@ -1,0 +1,128 @@
+/*
+ * jQuery File Upload Plugin CSS 1.3.0
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+/* line 13, /Users/erwinkarim/.rvm/gems/ruby-2.1.1/gems/jquery-fileupload-rails-0.4.4/app/assets/stylesheets/jquery.fileupload.scss */
+.fileinput-button {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 17, /Users/erwinkarim/.rvm/gems/ruby-2.1.1/gems/jquery-fileupload-rails-0.4.4/app/assets/stylesheets/jquery.fileupload.scss */
+.fileinput-button input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  -ms-filter: 'alpha(opacity=0)';
+  font-size: 200px;
+  direction: ltr;
+  cursor: pointer;
+}
+
+/* Fixes for IE < 8 */
+@media screen\9 {
+  /* line 31, /Users/erwinkarim/.rvm/gems/ruby-2.1.1/gems/jquery-fileupload-rails-0.4.4/app/assets/stylesheets/jquery.fileupload.scss */
+  .fileinput-button input {
+    filter: alpha(opacity=0);
+    font-size: 100%;
+    height: 100%;
+  }
+}
+/*
+ * jQuery File Upload UI Plugin CSS 9.0.0
+ * https://github.com/blueimp/jQuery-File-Upload
+ *
+ * Copyright 2010, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+/* line 13, /Users/erwinkarim/.rvm/gems/ruby-2.1.1/gems/jquery-fileupload-rails-0.4.4/app/assets/stylesheets/jquery.fileupload-ui.scss */
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle {
+  margin-bottom: 5px;
+}
+
+/* line 17, /Users/erwinkarim/.rvm/gems/ruby-2.1.1/gems/jquery-fileupload-rails-0.4.4/app/assets/stylesheets/jquery.fileupload-ui.scss */
+.progress-animated .progress-bar,
+.progress-animated .bar {
+  background: url(/assets/progressbar-b5be9c3e454834e518e241f56089f499.gif) !important;
+  filter: none;
+}
+
+/* line 22, /Users/erwinkarim/.rvm/gems/ruby-2.1.1/gems/jquery-fileupload-rails-0.4.4/app/assets/stylesheets/jquery.fileupload-ui.scss */
+.fileupload-process {
+  float: right;
+  display: none;
+}
+
+/* line 26, /Users/erwinkarim/.rvm/gems/ruby-2.1.1/gems/jquery-fileupload-rails-0.4.4/app/assets/stylesheets/jquery.fileupload-ui.scss */
+.fileupload-processing .fileupload-process,
+.files .processing .preview {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(/assets/loading-c7cf1d594db2187d6987200e6d1b65d3.gif) center no-repeat;
+  background-size: contain;
+}
+
+/* line 34, /Users/erwinkarim/.rvm/gems/ruby-2.1.1/gems/jquery-fileupload-rails-0.4.4/app/assets/stylesheets/jquery.fileupload-ui.scss */
+.files audio,
+.files video {
+  max-width: 300px;
+}
+
+@media (max-width: 767px) {
+  /* line 40, /Users/erwinkarim/.rvm/gems/ruby-2.1.1/gems/jquery-fileupload-rails-0.4.4/app/assets/stylesheets/jquery.fileupload-ui.scss */
+  .fileupload-buttonbar .toggle,
+  .files .toggle,
+  .files .btn span {
+    display: none;
+  }
+
+  /* line 45, /Users/erwinkarim/.rvm/gems/ruby-2.1.1/gems/jquery-fileupload-rails-0.4.4/app/assets/stylesheets/jquery.fileupload-ui.scss */
+  .files .name {
+    width: 80px;
+    word-wrap: break-word;
+  }
+
+  /* line 49, /Users/erwinkarim/.rvm/gems/ruby-2.1.1/gems/jquery-fileupload-rails-0.4.4/app/assets/stylesheets/jquery.fileupload-ui.scss */
+  .files audio,
+  .files video {
+    max-width: 80px;
+  }
+
+  /* line 53, /Users/erwinkarim/.rvm/gems/ruby-2.1.1/gems/jquery-fileupload-rails-0.4.4/app/assets/stylesheets/jquery.fileupload-ui.scss */
+  .files img,
+  .files canvas {
+    max-width: 100%;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+ */
+
+

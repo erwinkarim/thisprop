@@ -1,8 +1,12 @@
-= image_tag 'klcc.jpg', :width => '100%'
+.jumbotron{ :style => 'background-image: url(/images/klcc.jpg); width:100%; height: 540px; color:white;' } 
+	.container
+		%h1 Welcome to Ampang Property
+		%p
+			= link_to 'Explore', listings_path, :class => 'btn btn-primary' 
 .container
 	.row
 		.col-xs-12
-			%h1.page-header Recent Listings
+			%h1.page-header Recently
 	.row
 		- @listings.each do |listing|
 			= render :template =>  'listings/thumbnail.template', :locals => { :listing => listing }

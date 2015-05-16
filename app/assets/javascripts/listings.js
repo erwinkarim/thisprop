@@ -32,6 +32,9 @@ ListingsController.prototype.edit = function(){
 	});
 };
 
+ListingsController.prototype.show = function(){
+};
+
 ListingsController.prototype.user_listings = function(){
 };
 
