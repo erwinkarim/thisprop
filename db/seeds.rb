@@ -19,5 +19,21 @@ District.create( [
 	{ name:'Taman Melawati' },
 	{ name:'Bukit Antarabangsa' },
 	{ name:'Pandan Jaya' },
-	{ name:'Ampang Jaya' }
+	{ name:'Ampang Jaya' },
+	{ name:'Ampang Mewah' },
+	{ name:'Taman Bukit Ampang' },
+	{ name:'Taman Halaman' },
+	{ name:'Taman Dagang Jaya' },
+	{ name:'Taman Seri Intan' },
+	{ name:'Taman Saujana Ampang' },
+	{ name:'Taman Mulia Jaya' },
+	{ name:'Ukay Heights' },
+	{ name:'Taman Tun Abdul Razak' },
+	{ name:'Taman Desa Keramat' },
+	{ name:'Taman Sri Ukay' },
+	{ name:'Desa Pandan' },
+	{ name:'Beverly Heights' },
+	{ name:'Setia Hills' },
+	{ name:'Kampung Tengah Ampang' },
+	{ name:'Tropicana Villa' }
 ]);
