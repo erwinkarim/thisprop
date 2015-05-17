@@ -35,5 +35,6 @@ District.create( [
 	{ name:'Beverly Heights' },
 	{ name:'Setia Hills' },
 	{ name:'Kampung Tengah Ampang' },
-	{ name:'Tropicana Villa' }
+	{ name:'Tropicana Villa' },
+	{ name:'Others' }
 ]);
