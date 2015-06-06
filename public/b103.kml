@@ -1,0 +1,56 @@
+<kml xmlns="http://www.opengis.net/kml/2.2" >
+<Folder><name>RapidKL Bus</name>
+		<Style id='icon-normal'>
+			<IconStyle>
+				<color>ffA95B3F</color>
+				<scale>1.1</scale>
+				<Icon>
+					<href>http://www.gstatic.com/mapspro/images/stock/959-wht-circle-blank.png</href>
+				</Icon>
+			</IconStyle>
+			<LabelStyle>
+				<scale>1.1</scale>
+			</LabelStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+		<Style id='line-normal'>
+			<LineStyle>
+				<color>AAA95B3F</color>
+				<width>4</width>
+			</LineStyle>
+			<BalloonStyle>
+				<text><![CDATA[<h3>$[name]</h3>]]></text>
+			</BalloonStyle>
+		</Style>
+	<Folder><name>area1</name><Folder><name>B103</name><Placemark><name>Hab Bas Titiwangsa, Jalan Tun Razak</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.696034,3.171996</coordinates></Point></Placemark>
+<Placemark><name>Perkim (opp.), Jalan Ipoh</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.693203,3.171483</coordinates></Point></Placemark>
+<Placemark><name>Hospital Damai, Jalan Ipoh</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.695283,3.170025</coordinates></Point></Placemark>
+<Placemark><name>Shell/ Stesen Monorel Chow Kit, Jalan Ipoh</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.697571,3.167958</coordinates></Point></Placemark>
+<Placemark><name>Institut Penyelidikan Perubatan, Jalan Raja Muda Abdul Aziz</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.699521,3.167583</coordinates></Point></Placemark>
+<Placemark><name>Medan Selera Stadium Raja Muda, Jalan Raja Muda Abdul Aziz</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.704382,3.167964</coordinates></Point></Placemark>
+<Placemark><name>SRK Raja Muda Abdul Aziz, Jalan Raja Muda Abdul Aziz</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.707357,3.168086</coordinates></Point></Placemark>
+<Placemark><name>Yayasan Selangor, Jalan Raja Muda Abdul Aziz</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.709515,3.168104</coordinates></Point></Placemark>
+<Placemark><name>Menara TH Selborn, Jalan Raja Muda Abdul Aziz</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.711034,3.167953</coordinates></Point></Placemark>
+<Placemark><name>Flat PKNS Sungai Baru (opp.), Jalan Tun Razak</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.714593,3.166632</coordinates></Point></Placemark>
+<Placemark><name>City Square, Jalan Tun Razak</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.719674,3.161576</coordinates></Point></Placemark>
+<Placemark><name>Citibank, Jalan Ampang</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.717312,3.160399</coordinates></Point></Placemark>
+<Placemark><name>Menara Atlan, Jalan Ampang</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.71584,3.159992</coordinates></Point></Placemark>
+<Placemark><name>KLCC, Jalan Ampang</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.712357,3.159011</coordinates></Point></Placemark>
+<Placemark><name>KLCC, Jalan Ampang</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.712357,3.159011</coordinates></Point></Placemark>
+<Placemark><name>Ambank, Jalan Yap Kwan Seng</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.710982,3.160792</coordinates></Point></Placemark>
+<Placemark><name>Restoran Kampung Pandan, Jalan Yap Kwan Seng</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.713739,3.162568</coordinates></Point></Placemark>
+<Placemark><name>Flat PKNS Sungai Baru, Jalan Tun Razak</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.714613,3.166204</coordinates></Point></Placemark>
+<Placemark><name>Petronas, Jalan Raja Muda Abdul Aziz</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.711258,3.167829</coordinates></Point></Placemark>
+<Placemark><name>Yayasan Selangor (opp.), Jalan Raja Muda Abdul Aziz</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.70882,3.167832</coordinates></Point></Placemark>
+<Placemark><name>Wisma Naza, Jalan Raja Muda Abdul Aziz</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.706486,3.167864</coordinates></Point></Placemark>
+<Placemark><name>Stadium Raja Muda (opp.), Jalan Raja Muda Abdul Aziz</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.704507,3.167965</coordinates></Point></Placemark>
+<Placemark><name>Hotel Putra Muda, Jalan Raja Muda Abdul Aziz</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.699439,3.167553</coordinates></Point></Placemark>
+<Placemark><name>Hotel Grand Seasons, Jalan Pahang</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.698242,3.170168</coordinates></Point></Placemark>
+<Placemark><name>Hospital Kuala Lumpur (opp.), Jalan Pahang</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.699045,3.172719</coordinates></Point></Placemark>
+<Placemark><name>Hab Bas Titiwangsa, Jalan Tun Razak</name><styleUrl>#icon-normal</styleUrl><Point><coordinates>101.696034,3.171996</coordinates></Point></Placemark>
+<Placemark><name>line</name><styleUrl>#line-normal</styleUrl><LineString><coordinates>101.696034,3.171996 101.696011,3.171899 101.696484,3.171792 101.697171,3.171641 101.697172,3.171639 101.697242,3.172014 101.697288,3.172284 101.69736,3.172729 101.696797,3.172886 101.696409,3.172994 101.696297,3.173026 101.696251,3.173074 101.696205,3.173158 101.696153,3.173188 101.696115,3.173199 101.69563,3.172996 101.69524,3.172861 101.695096,3.172814 101.694965,3.17277 101.694842,3.172725 101.694737,3.172665 101.694602,3.172602 101.694178,3.172433 101.693536,3.172162 101.693205,3.172003 101.692995,3.171872 101.692957,3.171812 101.69295,3.171789 101.692942,3.17171 101.693203,3.171483 101.695283,3.170025 101.697571,3.167958 101.699521,3.167583 101.699641,3.167627 101.699842,3.167702 101.69999,3.167753 101.700119,3.167801 101.700328,3.167875 101.700526,3.167948 101.700667,3.167983 101.700789,3.167988 101.701321,3.16798 101.701927,3.167995 101.702973,3.167979 101.703842,3.167982 101.704382,3.167964 101.707357,3.168086 101.709515,3.168104 101.711034,3.167953 101.711964,3.167949 101.712941,3.167943 101.713247,3.16793 101.714003,3.167278 101.714126,3.167168 101.714243,3.167045 101.714436,3.166838 101.714486,3.166776 101.714546,3.166698 101.714593,3.166632 101.719674,3.161576 101.717312,3.160399 101.71584,3.159992 101.712357,3.159011 </coordinates></LineString></Placemark>
+<Placemark><name>line</name><styleUrl>#line-normal</styleUrl><LineString><coordinates>101.712357,3.159011 101.710982,3.160792 101.713739,3.162568 101.714613,3.166204 101.711258,3.167829 101.70882,3.167832 101.706486,3.167864 101.704507,3.167965 101.704302,3.167964 101.704144,3.167963 101.703956,3.167974 101.703841,3.16798 101.703402,3.167979 101.703149,3.167978 101.702973,3.167978 101.702497,3.167991 101.702247,3.167992 101.701885,3.167993 101.701306,3.16798 101.700783,3.167987 101.700665,3.167984 101.700526,3.167949 101.700118,3.167798 101.699439,3.167553 101.698242,3.170168 101.699045,3.172719 101.696034,3.171996 </coordinates></LineString></Placemark>
+</Folder></Folder></Folder>
+</kml>
