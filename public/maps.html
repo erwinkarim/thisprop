@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+    </style>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js" />
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+    <script type="text/javascript">
+			var map;
+			//var kml_src = 'https://www.dropbox.com/s/xjo2ny05reov5b1/b103.kml';
+			//var kml_src = 'http://thisprop-dev.herokuapp.com/b103.kml';
+
+
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 3.148889, lng: 101.713333},
+          zoom: 14
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+				//var myParser = new geoXML3.parser({map: map});
+				//myParser.parse('/b103.kml');
+				
+      }
+
+      //google.maps.event.addDomListener(window, 'load', initialize);
+
+			//load json data
+			$.get('http://jp.myrapid.com.my/query/route?route=B103', function(data){
+				$('#map-canvas').text(data);
+			});
+			
+    </script>
+  </head>
+  <body>
+<div id="map-canvas"></div>
+  </body>
+</html>
